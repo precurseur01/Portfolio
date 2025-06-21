@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo et description */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">JP</h3>
+            <h3 className="text-2xl font-bold mb-4">YD</h3>
             <p className="text-gray-400">
               Développeur Full Stack passionné par la création d'applications web modernes et performantes.
             </p>
