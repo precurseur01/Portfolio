@@ -53,7 +53,7 @@ const Contact = () => {
             ref={formRef}
             action="https://formspree.io/f/xldnpebz"
             method="POST"
-            nSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             className="space-y-6"
           >
             <div>
