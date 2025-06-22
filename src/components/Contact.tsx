@@ -8,11 +8,11 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Ici, vous pouvez ajouter la logique d'envoi du formulaire
-    console.log('Form submitted:', formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Ici, vous pouvez ajouter la logique d'envoi du formulaire
+  //   console.log('Form submitted:', formData);
+  // };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -47,7 +47,8 @@ const Contact = () => {
           </div>
 
           {/* Formulaire de contact */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://formspree.io/f/xldnpebz"
+            method="POST" className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Nom complet
