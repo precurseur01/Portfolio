@@ -10,12 +10,15 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormData((prev: any) => ({
-      ...prev,
-      name: "",
-      email: "",
-      message: ""
-    }));
+    setTimeout(() => {
+      setFormData((prev: any) => ({
+        ...prev,
+        name: "",
+        email: "",
+        message: ""
+      }));
+    }, 3000);
+
 
   };
 
