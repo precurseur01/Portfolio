@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
@@ -8,12 +8,15 @@ const Contact = () => {
     message: '',
   });
 
-  const formRef = useRef(null);
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormData((prev: any) => ({
+      ...prev,
+      name: "",
+      email: "",
+      message: ""
+    }));
 
-  const handleSubmit = () => {
-    setTimeout(() => {
-      formRef.current.reset(); // Vide les champs du formulaire
-    }, 100); // léger délai pour laisser Formspree soumettre
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -50,10 +53,8 @@ const Contact = () => {
 
           {/* Formulaire de contact */}
           <form
-            ref={formRef}
             action="https://formspree.io/f/xldnpebz"
             method="POST"
-            onSubmit={handleSubmit}
             className="space-y-6"
           >
             <div>
@@ -103,6 +104,7 @@ const Contact = () => {
 
             <button
               type="submit"
+              onClick={handleSubmit}
               className="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Envoyer le message
