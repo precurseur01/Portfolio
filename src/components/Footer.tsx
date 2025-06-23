@@ -29,13 +29,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Suivez-moi</h4>
             <div className="flex space-x-4">
-              <a href="https://github.com" className="text-gray-400 hover:text-white">
+              <a href="https://github.com/precurseur01" className="text-gray-400 hover:text-white">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-white">
+              <a href="https://linkedin.com/in/yndris-douanla-060968273" className="text-gray-400 hover:text-white">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white">
+              <a href="mailto:yndriswilf@gmail.com" className="text-gray-400 hover:text-white">
                 <Mail size={24} />
               </a>
             </div>

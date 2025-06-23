@@ -18,7 +18,7 @@ const skills = [
     {
         name: 'Outils & DevOps',
         icon: Settings,
-        items: ['Git', 'GitHub', 'Postman', 'Visual Studio Code']
+        items: ['Git', 'GitHub','Vercel', 'Postman', 'Visual Studio Code']
     },
     {
         name: 'Design UI/UX',
