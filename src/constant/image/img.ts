@@ -10,7 +10,7 @@ import fanbusyproject from "../../asset/img/fanbusyproject.png";
 import fanbusystart1 from "../../asset/img/fanbusystart1.png";
 import fanbusystart3 from "../../asset/img/fanbusystart3.png";
 import fanbusytchat from "../../asset/img/fanbusytchat.png";
-import landingp from "../../asset/img/landingp.png";
+import landingp from "../../asset/img/Landingp.png";
 import landingpage from "../../asset/img/landingpage.png";
 import leavetip from "../../asset/img/leavetip.png";
 import startdesktop from "../../asset/img/startdesktop.png";
