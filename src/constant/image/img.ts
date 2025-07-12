@@ -1,4 +1,4 @@
-import yndProfil from "../../asset/img/yndprofil.png";
+import yndProfil from "../../asset/img/yndProfil.png";
 import dasboadlogin from "../../asset/img/dasboadlogin.png";
 import dashboard from "../../asset/img/dashboard.png";
 import donation from "../../asset/img/donation.png";
