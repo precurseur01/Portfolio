@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
           <div className="flex-1">
             <img 
-              src={Img.yndprofil} 
+              src={Img.yndProfil} 
               alt="Portrait professionnel"
               className="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover shadow-xl"
             />

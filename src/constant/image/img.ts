@@ -1,4 +1,4 @@
-import yndprofil from "../../asset/img/yndprofil.png";
+import yndProfil from "../../asset/img/yndprofil.png";
 import dasboadlogin from "../../asset/img/dasboadlogin.png";
 import dashboard from "../../asset/img/dashboard.png";
 import donation from "../../asset/img/donation.png";
@@ -23,7 +23,7 @@ import f from "../../asset/img/f.png"
 
 
 const Img = {
-    yndprofil,
+    yndProfil,
     dasboadlogin,
     dashboard,
     donation,
