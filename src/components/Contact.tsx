@@ -108,7 +108,7 @@ const Contact = () => {
             <button
               type="submit"
               onClick={handleSubmit}
-              className="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="w-full px-6 py-3 bg-[#00A6E2] text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Envoyer le message
             </button>

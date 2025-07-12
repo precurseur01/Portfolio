@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Github, Linkedin, Mail } from 'lucide-react';
+import { Img } from '../constant';
 
 const Footer = () => {
   return (
@@ -7,7 +8,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo et description */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">YD</h3>
+            <div className="flex items-center mb-4">
+              <img
+                src={Img.logo}
+                alt="Free Technology Logo"
+                className="max-h-[64px] w-auto"
+              />
+            </div>
             <p className="text-gray-400">
               Développeur Full Stack passionné par la création d'applications web modernes et performantes.
             </p>
@@ -29,14 +36,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Suivez-moi</h4>
             <div className="flex space-x-4">
-              <a href="https://github.com/precurseur01" className="text-gray-400 hover:text-white">
+              <a href="https://github.com/precurseur01" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/yndris-douanla-060968273" className="text-gray-400 hover:text-white">
+              <a href="https://linkedin.com/in/yndris-douanla-060968273" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:yndriswilf@gmail.com" className="text-gray-400 hover:text-white">
+              <a href="mailto:yndriswilf@gmail.com" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
                 <Mail size={24} />
+              </a>
+              <a href="https://www.facebook.com/share/1BC6jjWT3G/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white">
+                <Facebook size={24} />
               </a>
             </div>
           </div>

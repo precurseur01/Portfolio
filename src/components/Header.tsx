@@ -1,5 +1,6 @@
 import React from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Facebook } from 'lucide-react';
+import { Img } from '../constant';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -8,7 +9,13 @@ const Header = () => {
     <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-gray-900">YD</div>
+          <div className="flex items-center">
+            <img
+              src={Img.logo}
+              alt="Free Technology Logo"
+              className="max-h-[50px] w-auto"
+            />
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
@@ -29,6 +36,10 @@ const Header = () => {
             </a>
             <a href="mailto:yndriswilf@gmail.com" className="text-gray-700 hover:text-gray-900">
               <Mail size={20} />
+            </a>
+            <a href="https://www.facebook.com/share/1BC6jjWT3G/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white">
+              <Facebook size={24} />
             </a>
           </div>
 

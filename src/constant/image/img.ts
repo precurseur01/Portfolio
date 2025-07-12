@@ -18,6 +18,8 @@ import fan from "../../asset/img/fan.png"
 import valentine from "../../asset/img/valentine.png";
 import f from "../../asset/img/f.png"
 import fwordpress from "../../asset/img/fwordpress.png"
+import logo from "../../asset/img/logo.png"
+import newlogo from "../../asset/img/newlogo.svg"
 // import valentinedesktop from "../../asset/img/valentinedesktop.png";
 // import valentinelandingpage from "../../asset/img/valentinelandingpage.png";
 // import valentinemob from "../../asset/img/valentinemob.png";
@@ -43,7 +45,9 @@ const Img = {
     fan,
     valentine,
     f,
-    fwordpress
+    fwordpress,
+    logo,
+    newlogo
     // valentinedesktop,
     // valentinelandingpage,
     // valentinemob

@@ -5,7 +5,7 @@ import { Img } from '../constant';
 
 const Hero = () => {
   return (
-    <section id="accueil" className="pt-20 pb-16">
+    <section id="accueil" className="pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1">
@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <a 
               href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-[#00A6E2] text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Me contacter
               <ArrowRight className="ml-2" size={20} />
