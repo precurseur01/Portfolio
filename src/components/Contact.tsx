@@ -38,15 +38,15 @@ const Contact = () => {
             <h3 className="text-xl font-semibold mb-6">Mes coordonnées</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Mail className="w-6 h-6 text-blue-600 mr-3" />
+                <Mail className="w-6 h-6 text-[#00A6E2] mr-3" />
                 <span>yndriswilf@gmail.com</span>
               </div>
               <div className="flex items-center">
-                <Phone className="w-6 h-6 text-blue-600 mr-3" />
+                <Phone className="w-6 h-6 text-[#00A6E2] mr-3" />
                 <span>+237 650871031</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="w-6 h-6 text-blue-600 mr-3" />
+                <MapPin className="w-6 h-6 text-[#00A6E2] mr-3" />
                 <span>Yaounde, Cameroun</span>
               </div>
             </div>

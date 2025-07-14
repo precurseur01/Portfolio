@@ -21,7 +21,7 @@ const About = () => {
           {skills.map((skill) => (
             <div key={skill.name} className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <skill.icon className="w-6 h-6 text-blue-600 mr-2" />
+                <skill.icon className="w-6 h-6 text-[#00A6E2] mr-2" />
                 <h3 className="text-xl font-semibold">{skill.name}</h3>
               </div>
               <ul className="space-y-2">
