@@ -8,7 +8,7 @@ const skills = [
     {
         name: 'Backend',
         icon: Terminal,
-        items: ['Node.js', 'Express.js', 'REST APIs']
+        items: ['Node.js', 'Express.js', 'python', 'REST APIs']
     },
     {
         name: 'Base de données',
@@ -18,7 +18,7 @@ const skills = [
     {
         name: 'Outils & DevOps',
         icon: Settings,
-        items: ['Git', 'GitHub','Vercel', 'Postman', 'Visual Studio Code']
+        items: ['Git', 'GitHub', 'Vercel', 'Postman', 'Visual Studio Code']
     },
     {
         name: 'Design UI/UX',
