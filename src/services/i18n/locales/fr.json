@@ -1,0 +1,102 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "portfolio": "Portfolio",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "name": "Jean Dupont",
+        "title": "Développeur Full Stack",
+        "description": "Je crée des applications web modernes et performantes qui répondent aux besoins de mes clients.",
+        "contactButton": "Me contacter"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "description": "Passionné par le développement web depuis plus de 5 ans, je combine créativité et expertise technique pour créer des solutions numériques innovantes. Mon approche est centrée sur l'utilisateur, avec un souci constant de la qualité et de la performance.",
+        "skill": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "design": "Design",
+            "tools": "Outils & DevOps",
+            "database": "Base de données"
+        }
+    },
+    "projects": {
+        "title": "Portfolio",
+        "socialMediaApp": {
+            "title": "Application de réseau social",
+            "description": "Application de réseau social avec messagerie instantanée et partage de médias."
+        },
+        "landingPageDating": {
+            "title": "Landing Page - App de Rencontre",
+            "description": "Une landing page moderne et engageante pour une application de rencontre."
+        },
+        "chatSystem": {
+            "title": "Système de Chat Créateurs–Fans",
+            "description": "Messagerie privée avec partage de médias. Le chat peut être gratuit ou payant, avec envoi de contenus monétisés."
+        },
+        "portfolio": {
+            "title": "Mon Portfolio Personnel",
+            "description": "Site portfolio responsive, mettant en avant mes projets, compétences et contact. Interface épurée."
+        },
+        "donationSite": {
+            "title": "Site de Dons – Fondation Amalia",
+            "description": "Plateforme de dons en ligne pour soutenir les actions sociales de la Fondation Amalia. Paiement sécurisé et UX fluide."
+        },
+        "wordpressLanding": {
+            "title": "Landing Page WordPress – IA",
+            "description": "Page de présentation d’un produit IA développée avec WordPress. Optimisée pour la conversion et le SEO."
+        },
+        "collaborativeIA": {
+            "title": "Plateforme IA Collaborative",
+            "description": "Plateforme interactive où les membres d’une équipe répondent à l’IA à tour de rôle, facilitant la réflexion collective."
+        },
+        "dynamicMap": {
+            "title": "Générateur de Cartographie Dynamique",
+            "description": "Outil interactif basé sur D3.js permettant de visualiser les tâches, décisions et acteurs d’un processus collaboratif."
+        }
+    },
+    "services": {
+        "title": "Mes Services",
+        "list": {
+            "webDev": {
+                "title": "Développement Web",
+                "description": "Création de sites web et d\\'applications web sur mesure avec les dernières technologies.",
+                "price": "À partir de 2000€"
+            },
+            "uiux": {
+                "title": "UI/UX Design",
+                "description": "Conception d\\'interfaces utilisateur intuitives et d\\'expériences utilisateur optimales.",
+                "price": "À partir de 1500€"
+            },
+            "seo": {
+                "title": "SEO & Performance",
+                "description": "Optimisation pour les moteurs de recherche et amélioration des performances.",
+                "price": "À partir de 800€"
+            },
+            "cloud": {
+                "title": "Architecture Cloud",
+                "description": "Mise en place et gestion d\\'infrastructures cloud scalables.",
+                "price": "À partir de 2500€"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "info": "Mes coordonnées",
+        "form": {
+            "name": "Nom complet",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Envoyer le message"
+        }
+    },
+    "footer": {
+        "description": "Développeur Full Stack passionné par la création d'applications web modernes et performantes.",
+        "quickLinks": "Liens rapides",
+        "followMe": "Suivez-moi",
+        "rights": "Tous droits réservés."
+    }
+}

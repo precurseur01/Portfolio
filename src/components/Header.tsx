@@ -1,8 +1,11 @@
 import React from 'react';
 import { Menu, X, Github, Linkedin, Mail, Facebook } from 'lucide-react';
 import { Img } from '../constant';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -19,15 +22,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#accueil" className="text-gray-700 hover:text-gray-900">Accueil</a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900">À propos</a>
-            <a href="#portfolio" className="text-gray-700 hover:text-gray-900">Portfolio</a>
-            <a href="#services" className="text-gray-700 hover:text-gray-900">Services</a>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900">Contact</a>
+            <a href="#accueil" className="text-gray-700 hover:text-gray-900">{t('nav.home')}</a>
+            <a href="#about" className="text-gray-700 hover:text-gray-900">{t('nav.about')}</a>
+            <a href="#portfolio" className="text-gray-700 hover:text-gray-900">{t('nav.portfolio')}</a>
+            <a href="#services" className="text-gray-700 hover:text-gray-900">{t('nav.services')}</a>
+            <a href="#contact" className="text-gray-700 hover:text-gray-900">{t('nav.contact')}</a>
           </nav>
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
             <a href="https://github.com/precurseur01" className="text-gray-700 hover:text-gray-900">
               <Github size={20} />
             </a>
@@ -57,11 +61,14 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#accueil" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Accueil</a>
-            <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">À propos</a>
-            <a href="#portfolio" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Portfolio</a>
-            <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Services</a>
-            <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</a>
+            <a href="#accueil" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.home')}</a>
+            <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.about')}</a>
+            <a href="#portfolio" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.portfolio')}</a>
+            <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.services')}</a>
+            <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.contact')}</a>
+            <div className="px-3 py-2 border-t border-gray-100 mt-2 pt-4">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

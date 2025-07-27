@@ -1,12 +1,15 @@
 import { ExternalLink, Github } from 'lucide-react';
-import projects from '../constant/data/project';
+import { useTranslation } from 'react-i18next';
+import projectsData from '../constant/data/project';
 
 
 const Portfolio = () => {
+  const { t } = useTranslation()
+  const projects = projectsData()
   return (
     <section id="portfolio" className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Portfolio</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">{t('projects.title')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
@@ -15,7 +18,6 @@ const Portfolio = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full max-w-sm h-96 object-contain"
-
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

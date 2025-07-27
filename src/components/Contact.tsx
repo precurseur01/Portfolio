@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
@@ -11,16 +13,16 @@ const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = () => {
-    // On vide les champs juste après soumission
-    // On ne touche pas au comportement natif
     setTimeout(() => {
       if (formRef.current) {
-        formRef.current.reset(); // fonctionne à tous les coups
+        formRef.current.reset();
       }
-    }, 3000); // petit délai pour laisser le temps à Formspree d’envoyer
+    }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -30,12 +32,14 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Contact</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">
+          {t('contact.title')}
+        </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Informations de contact */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Mes coordonnées</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('contact.info')}</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-[#00A6E2] mr-3" />
@@ -52,7 +56,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Formulaire de contact */}
+          {/* Formulaire */}
           <form
             ref={formRef}
             action="https://formspree.io/f/xldnpebz"
@@ -62,7 +66,7 @@ const Contact = () => {
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                Nom complet
+                {t('contact.form.name')}
               </label>
               <input
                 type="text"
@@ -77,7 +81,7 @@ const Contact = () => {
 
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                Email
+                {t('contact.form.email')}
               </label>
               <input
                 type="email"
@@ -92,7 +96,7 @@ const Contact = () => {
 
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                Message
+                {t('contact.form.message')}
               </label>
               <textarea
                 id="message"
@@ -110,7 +114,7 @@ const Contact = () => {
               onClick={handleSubmit}
               className="w-full px-6 py-3 bg-[#00A6E2] text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
-              Envoyer le message
+              {t('contact.form.submit')}
             </button>
           </form>
         </div>

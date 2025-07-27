@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Jean Dupont",
+    "title": "Full Stack Developer",
+    "description": "I create modern and performant web applications that meet my clients' needs.",
+    "contactButton": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Passionate about web development for over 5 years, I combine creativity and technical expertise to create innovative digital solutions. My approach is user-centered, with a constant focus on quality and performance.",
+    "skill": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "design": "Design",
+      "tools": "Tools & DevOps",
+      "database": "Database"
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "socialMediaApp": {
+      "title": "Social Media App",
+      "description": "Social media application with instant messaging and media sharing."
+    },
+    "landingPageDating": {
+      "title": "Landing Page - Dating App",
+      "description": "A modern and engaging landing page for a dating application."
+    },
+    "chatSystem": {
+      "title": "Creator–Fan Chat System",
+      "description": "Private messaging with media sharing. The chat can be free or paid, with monetized content sending."
+    },
+    "portfolio": {
+      "title": "My Personal Portfolio",
+      "description": "Responsive portfolio site showcasing my projects, skills, and contact. Clean and responsive interface."
+    },
+    "donationSite": {
+      "title": "Donation Website – Amalia Foundation",
+      "description": "Online donation platform supporting the social actions of the Amalia Foundation. Secure payment, clean design, and smooth user experience."
+    },
+    "wordpressLanding": {
+      "title": "WordPress Landing Page – AI",
+      "description": "Presentation page of an AI product developed with WordPress. Optimized for conversion and SEO."
+    },
+    "collaborativeAIPlatform": {
+      "title": "Collaborative AI Platform",
+      "description": "Interactive platform where team members respond to AI in turn, facilitating collective thinking. Generates a strategic mapping at the end."
+    },
+    "dynamicMappingGenerator": {
+      "title": "Dynamic Mapping Generator",
+      "description": "Interactive tool based on D3.js to visualize tasks, decisions, and actors in a collaborative process. Fully editable with drag & drop."
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Custom website and web application development using the latest technologies.",
+      "price": "From €2000"
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Design of intuitive user interfaces and optimal user experiences.",
+      "price": "From €1500"
+    },
+    "seo": {
+      "title": "SEO & Performance",
+      "description": "Search engine optimization and performance enhancement.",
+      "price": "From €800"
+    },
+    "cloud": {
+      "title": "Cloud Architecture",
+      "description": "Setup and management of scalable cloud infrastructures.",
+      "price": "From €2500"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "info": "My contact details",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "description": "Full Stack Developer passionate about building modern and high-performance web applications.",
+    "quickLinks": "Quick Links",
+    "followMe": "Follow Me",
+    "rights": "All rights reserved."
+  }
+}
