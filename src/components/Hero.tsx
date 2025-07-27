@@ -21,7 +21,7 @@ const Hero = () => {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 bg-[#00A6E2] text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-[#00A6E2] text-white font-medium rounded-lg hover:bg-[#52BB72] transition-colors"
             >
               {t('hero.contactButton')}
               <ArrowRight className="ml-2" size={20} />
