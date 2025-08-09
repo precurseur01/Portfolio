@@ -12,13 +12,22 @@ const Contact = () => {
 
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    // Optionnel : si tu veux éviter le rechargement complet
+    // e.preventDefault();
+
     setTimeout(() => {
       if (formRef.current) {
         formRef.current.reset();
       }
-    }, 3000);
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    }, 3000); // 3s après l'envoi
   };
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
