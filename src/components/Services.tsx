@@ -17,7 +17,7 @@ const Services = () => {
               <service.icon className="w-12 h-12 text-[#00A6E2] mb-4" />
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <p className="text-[#00A6E2] font-semibold">{service.price}</p>
+              {/* <p className="text-[#00A6E2] font-semibold">{service.price}</p> */}
             </div>
           ))}
         </div>
