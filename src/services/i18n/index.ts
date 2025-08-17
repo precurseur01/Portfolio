@@ -17,6 +17,10 @@ i18n
         translation: en
       }
     },
+    detection: {
+      order: ['path', 'navigator'],
+      lookupFromPathIndex: 0, // 0 = premier segment de l'URL (/fr/...)
+    },
     fallbackLng: 'en',
     debug: false,
     interpolation: {
