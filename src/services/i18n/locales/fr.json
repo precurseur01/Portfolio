@@ -60,7 +60,7 @@
     },
     "services": {
         "title": "Mes Services",
-        "webDev": {
+        "webDevelopment": {
             "title": "Développement Web",
             "description": "Création de sites web et d'applications web sur mesure avec les dernières technologies.",
             "price": "À partir de 2000€"

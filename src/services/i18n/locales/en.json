@@ -60,7 +60,7 @@
   },
   "services": {
     "title": "My Services",
-    "webDev": {
+    "webDevelopment": {
       "title": "Web Development",
       "description": "Custom website and web application development using the latest technologies.",
       "price": "From €2000"
