@@ -60,27 +60,25 @@
     },
     "services": {
         "title": "Mes Services",
-        "list": {
-            "webDev": {
-                "title": "Développement Web",
-                "description": "Création de sites web et d\\'applications web sur mesure avec les dernières technologies.",
-                "price": "À partir de 2000€"
-            },
-            "uiux": {
-                "title": "UI/UX Design",
-                "description": "Conception d\\'interfaces utilisateur intuitives et d\\'expériences utilisateur optimales.",
-                "price": "À partir de 1500€"
-            },
-            "seo": {
-                "title": "SEO & Performance",
-                "description": "Optimisation pour les moteurs de recherche et amélioration des performances.",
-                "price": "À partir de 800€"
-            },
-            "cloud": {
-                "title": "Architecture Cloud",
-                "description": "Mise en place et gestion d\\'infrastructures cloud scalables.",
-                "price": "À partir de 2500€"
-            }
+        "webDev": {
+            "title": "Développement Web",
+            "description": "Création de sites web et d\\'applications web sur mesure avec les dernières technologies.",
+            "price": "À partir de 2000€"
+        },
+        "uiux": {
+            "title": "UI/UX Design",
+            "description": "Conception d\\'interfaces utilisateur intuitives et d\\'expériences utilisateur optimales.",
+            "price": "À partir de 1500€"
+        },
+        "seo": {
+            "title": "SEO & Performance",
+            "description": "Optimisation pour les moteurs de recherche et amélioration des performances.",
+            "price": "À partir de 800€"
+        },
+        "cloud": {
+            "title": "Architecture Cloud",
+            "description": "Mise en place et gestion d\\'infrastructures cloud scalables.",
+            "price": "À partir de 2500€"
         }
     },
     "contact": {
