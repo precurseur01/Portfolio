@@ -1,8 +1,7 @@
 import { Code2, Palette, Globe, Cpu } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
-const servicesData = () => {
-    const { t } = useTranslation();
+
+const servicesData = (t: any) => {
 
     return [
         {
