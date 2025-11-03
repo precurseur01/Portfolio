@@ -43,7 +43,7 @@ const LanguageSwitcher = () => {
         <div className="relative language-switcher">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center space-x-2 px-3 py-2 text-gray-700 hover:text-gray-900 transition-colors rounded-lg hover:bg-gray-100"
+                className="flex items-center space-x-2 px-3  text-gray-700 hover:text-gray-900 transition-colors rounded-lg 0"
                 title="Changer de langue / Change language"
             >
                 <Globe size={20} />

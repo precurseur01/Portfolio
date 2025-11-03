@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Github, Linkedin, Mail, Facebook } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Img } from '../constant';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
@@ -27,11 +27,12 @@ const Header = () => {
             <a href="#portfolio" className="text-gray-700 hover:text-gray-900">{t('nav.portfolio')}</a>
             <a href="#services" className="text-gray-700 hover:text-gray-900">{t('nav.services')}</a>
             <a href="#contact" className="text-gray-700 hover:text-gray-900">{t('nav.contact')}</a>
+            <LanguageSwitcher />
           </nav>
 
           {/* Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
-            <LanguageSwitcher />
+          {/* <div className="hidden md:flex items-center space-x-4">
+          
             <a href="https://github.com/precurseur01" className="text-gray-700 hover:text-gray-900">
               <Github size={20} />
             </a>
@@ -45,7 +46,7 @@ const Header = () => {
               className="text-gray-400 hover:text-white">
               <Facebook size={24} />
             </a>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <button
@@ -66,7 +67,7 @@ const Header = () => {
             <a href="#portfolio" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.portfolio')}</a>
             <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.services')}</a>
             <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">{t('nav.contact')}</a>
-            <div className="px-3 py-2 border-t border-gray-100 mt-2 pt-4">
+            <div className="px-3 py-2 border-t border-gray mt-2 pt-4">
               <LanguageSwitcher />
             </div>
           </div>

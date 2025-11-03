@@ -7,14 +7,20 @@
     "contact": "Contact"
   },
   "hero": {
+    "avaibility": "Available for new projects",
     "name": "Jean Dupont",
     "title": "Full Stack Developer",
-    "description": "I create modern and performant web applications that meet my clients' needs.",
-    "contactButton": "Contact me"
+    "description": "Full-Stack developer passionate about creating modern, high-performance, and elegant web applications.Specialized in React, Node.js, cloud architecture, and digital strategies.",
+    "contactButton": "Contact me",
+    "smoothAndMemorableExperiences": "smooth and memorable experiences",
+    "whoTurnsIdeasInto": "Who turns ideas into"
   },
   "about": {
     "title": "About me",
-    "description": "Passionate about web development for over 5 years, I combine creativity and technical expertise to create innovative digital solutions. My approach is user-centered, with a constant focus on quality and performance.",
+    "description": "Full-Stack developer with a passion for creating exceptional digital experiences.",
+    "description1": "I turn complex concepts into elegant and high-performance solutions",
+    "description2": ", leveraging modern technologies and industry best practices.",
+    "versatilityExcellence": "Versatility & Excellence",
     "skill": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -25,6 +31,8 @@
   },
   "projects": {
     "title": "Portfolio",
+    "completedProjects": "Completed Projects",
+    "description": " Explore a selection of projects that demonstrate my ability to deliver high-quality technical solutions",
     "socialMediaApp": {
       "title": "Social Media App",
       "description": "Social media application with instant messaging and media sharing."
@@ -82,7 +90,11 @@
     }
   },
   "contact": {
+    "availability": "Availability",
+    "contactInformation": "Contact Information",
+    "currentlyAvailable": " I am currently available for new projects and collaborations.",
     "title": "Contact",
+    "letsStartProject": "Let's Start a Project",
     "info": "My contact details",
     "form": {
       "name": "Full name",

@@ -1,15 +1,52 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import projectsData from '../constant/data/project';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 
 const Portfolio = () => {
   const { t } = useTranslation()
   const projects = projectsData()
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
   return (
     <section id="portfolio" className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">{t('projects.title')}</h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.2 }}
+            className="inline-block text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3"
+          >
+            {t('projects.title')}
+          </motion.span>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3 }}
+            className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
+          >
+            {t('projects.completedProjects')}
+
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4 }}
+            className="text-lg text-slate-600 max-w-2xl mx-auto"
+          >
+            {t('projects.description')}
+           
+          </motion.p>
+        </motion.div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (

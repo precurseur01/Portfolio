@@ -7,14 +7,20 @@
         "contact": "Contact"
     },
     "hero": {
+        "avaibility": "Disponible pour de nouveaux projets",
         "name": "Jean Dupont",
         "title": "Développeur Full Stack",
-        "description": "Je crée des applications web modernes et performantes qui répondent aux besoins de mes clients.",
-        "contactButton": "Me contacter"
+        "description": "Full-Stack passionné par créer des applications web modernes, performantes et élégantes.Spécialisé en React, Node.js, architecture cloud et stratégies digitales.",
+        "contactButton": "Me contacter",
+        "smoothAndMemorableExperiences": "des expériences fluides et mémorables",
+        "whoTurnsIdeasInto": "Qui transforme les idées en"
     },
     "about": {
         "title": "À propos de moi",
-        "description": "Passionné par le développement web depuis plus de 5 ans, je combine créativité et expertise technique pour créer des solutions numériques innovantes. Mon approche est centrée sur l'utilisateur, avec un souci constant de la qualité et de la performance.",
+        "description": "Développeur Full-Stack avec une passion pour la création d'expériences numériques exceptionnelles.",
+        "description1": "Je transforme des concepts complexes en solutions élégantes et performantes",
+        "description2": ", en m'appuyant sur les technologies modernes et les meilleures pratiques du secteur.",
+        "versatilityExcellence": "Polyvalence & Excellence",
         "skill": {
             "frontend": "Frontend",
             "backend": "Backend",
@@ -25,6 +31,8 @@
     },
     "projects": {
         "title": "Portfolio",
+        "completedProjects": "Projets réalisés",
+        "description": " Découvrez une sélection de projets qui démontrent ma capacité à livrer des solutions techniques de haute qualité",
         "socialMediaApp": {
             "title": "Application de réseau social",
             "description": "Application de réseau social avec messagerie instantanée et partage de médias."
@@ -82,7 +90,11 @@
         }
     },
     "contact": {
+        "availability": "Disponibilité",
+        "contactInformation": "Informations de contact",
+        "currentlyAvailable": " je suis actuellement disponible pour de nouveaux projets et collaborations.",
         "title": "Contact",
+        "letsStartProject": "Démarrons un Projet",
         "info": "Mes coordonnées",
         "form": {
             "name": "Nom complet",
