@@ -16,6 +16,8 @@
         "whoTurnsIdeasInto": "Qui transforme les idées en"
     },
     "about": {
+        "completedProjects": "Projets réalisés",
+        "customerSatisfaction": "Satisfaction client",
         "title": "À propos de moi",
         "description": "Développeur Full-Stack avec une passion pour la création d'expériences numériques exceptionnelles.",
         "description1": "Je transforme des concepts complexes en solutions élégantes et performantes",
@@ -27,7 +29,8 @@
             "design": "Design",
             "tools": "Outils & DevOps",
             "database": "Base de données"
-        }
+        },
+        "yearsOfExperience": "Années d'expérience"
     },
     "projects": {
         "title": "Portfolio",

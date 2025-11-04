@@ -107,29 +107,44 @@ const About = () => {
             transition={{ delay: 0.8 }}
             className="mt-16 text-center"
           >
-            <div className="inline-flex items-center gap-8 px-8 py-6 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-2xl border border-blue-100">
+            <div
+              className="flex flex-wrap justify-center items-center gap-8 px-8 py-6 bg-gradient-to-r from-blue-50 to-emerald-50  rounded-2xl border border-blue-100 max-w-full "
+            >
               <div className="text-center">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-700">
                   5+
                 </div>
-                <div className="text-sm text-slate-600 font-medium mt-1">Projets réalisés</div>
+                <div className="text-sm text-slate-600 font-medium mt-1">
+                  {t("about.completedProjects")}
+                </div>
               </div>
-              <div className="w-px h-12 bg-slate-300" />
+
+              {/* Séparateur visible seulement sur grands écrans */}
+              <div className="hidden md:block w-px h-12 bg-slate-300" />
+
               <div className="text-center">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-700">
                   3+
                 </div>
-                <div className="text-sm text-slate-600 font-medium mt-1">Années d'expérience</div>
+                <div className="text-sm text-slate-600 font-medium mt-1">
+                  {t("about.yearsOfExperience")}
+                </div>
               </div>
-              <div className="w-px h-12 bg-slate-300" />
+
+              {/* Séparateur visible seulement sur grands écrans */}
+              <div className="hidden md:block w-px h-12 bg-slate-300" />
+
               <div className="text-center">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-cyan-700">
                   100%
                 </div>
-                <div className="text-sm text-slate-600 font-medium mt-1">Satisfaction client</div>
+                <div className="text-sm text-slate-600 font-medium mt-1">
+                  {t("about.customerSatisfaction")}
+                </div>
               </div>
             </div>
           </motion.div>
+
         </div>
       </section>
     </>
