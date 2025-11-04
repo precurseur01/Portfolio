@@ -69,7 +69,7 @@ const Contact = () => {
   return (
     <>
 
-      <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
+      <section id="contact" className="py-24 bg-black/5 from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" ref={ref}>

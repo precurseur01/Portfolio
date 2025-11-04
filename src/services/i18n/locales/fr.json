@@ -74,7 +74,7 @@
         "title": "Mes Services",
         "services&": "Services & ",
         "description": "Des services adaptés à vos besoins, de la conception à la mise en production.",
-        "Customized Solutions": "Solutions Personnalisées",
+        "customizedSolutions": "Solutions Personnalisées",
         "webDevelopment": {
             "title": "Développement Web",
             "description": "Création de sites web et d'applications web sur mesure avec les dernières technologies.",
@@ -95,6 +95,31 @@
             "description": "Mise en place et gestion d'infrastructures cloud scalables.",
             "price": "À partir de 2500€"
         }
+    },
+    "digital": {
+        "title": "Stratégie & Communication Digitale",
+        "description": {
+            "part1": "En tant que ",
+            "developer": "développeur",
+            "part2": ", je crée des produits numériques qui méritent d’être vus. Mon expertise en ",
+            "digitalCom": "communication digitale",
+            "part3": " me permet d’aider les marques à construire une présence en ligne cohérente et performante."
+        },
+        "items": {
+            "community": {
+                "title": "Gestion de Communauté",
+                "desc": "Animation, modération et engagement des communautés autour de vos projets et marques."
+            },
+            "content": {
+                "title": "Stratégie de Contenu",
+                "desc": "Création de contenus authentiques et cohérents pour renforcer votre image digitale."
+            },
+            "visibility": {
+                "title": "Lancement & Visibilité",
+                "desc": "Accompagnement complet du lancement au rayonnement de vos projets numériques."
+            }
+        },
+        "cta": "Voir mon univers Community Manager"
     },
     "contact": {
         "availability": "Disponibilité",

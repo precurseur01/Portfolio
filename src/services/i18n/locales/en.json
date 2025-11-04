@@ -74,7 +74,7 @@
     "title": "My Services",
     "services&": "Services & ",
     "description": " I offer a range of services to help you bring your digital projects to life, tailored to your specific needs.",
-    "Customized Solutions": "Customized Solutions",
+    "customizedSolutions": "Customized Solutions",
     "webDevelopment": {
       "title": "Web Development",
       "description": "Custom website and web application development using the latest technologies.",
@@ -95,6 +95,31 @@
       "description": "Setup and management of scalable cloud infrastructures.",
       "price": "From €2500"
     }
+  },
+  "digital": {
+    "title": "Digital Strategy & Communication",
+    "description": {
+      "part1": "As a ",
+      "developer": "developer",
+      "part2": ", I create digital products that deserve to be seen. My expertise in ",
+      "digitalCom": "digital communication",
+      "part3": " helps brands build a strong and coherent online presence."
+    },
+    "items": {
+      "community": {
+        "title": "Community Management",
+        "desc": "Animation, moderation, and engagement of communities around your projects and brands."
+      },
+      "content": {
+        "title": "Content Strategy",
+        "desc": "Creating authentic and coherent content to strengthen your digital image."
+      },
+      "visibility": {
+        "title": "Launch & Visibility",
+        "desc": "Comprehensive support from launch to the digital growth of your projects."
+      }
+    },
+    "cta": "Discover my Community Manager portfolio"
   },
   "contact": {
     "availability": "Availability",

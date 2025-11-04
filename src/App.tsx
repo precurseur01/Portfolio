@@ -5,6 +5,7 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import DigitalStrategy from './components/DigitalStrategy';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Portfolio />
         <Services />
+        <DigitalStrategy />
         <Contact />
       </main>
       <Footer />
