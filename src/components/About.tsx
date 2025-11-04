@@ -112,7 +112,7 @@ const About = () => {
             >
               <div className="text-center">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-700">
-                  5+
+                  10+
                 </div>
                 <div className="text-sm text-slate-600 font-medium mt-1">
                   {t("about.completedProjects")}
@@ -124,7 +124,7 @@ const About = () => {
 
               <div className="text-center">
                 <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-700">
-                  3+
+                  5+
                 </div>
                 <div className="text-sm text-slate-600 font-medium mt-1">
                   {t("about.yearsOfExperience")}
