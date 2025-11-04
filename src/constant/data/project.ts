@@ -1,7 +1,7 @@
 import Img from "../image/img";
 import { useTranslation } from "react-i18next";
 
-const projectsData = () => {
+const ProjectsData = () => {
     const { t } = useTranslation();
 
     return [
@@ -19,7 +19,7 @@ const projectsData = () => {
             image: `${Img.valentine}`,
             tags: ["React", "Tailwind CSS", "Vite"],
             githubLink: "",
-            liveLink: "theprojectvalentine.com",
+            liveLink: "https://theprojectvalentine.com",
         },
         {
             title: t("projects.chatSystem.title"),
@@ -29,14 +29,14 @@ const projectsData = () => {
             githubLink: "",
             liveLink: "https://www.fanbusy.com/",
         },
-        {
-            title: t("projects.portfolio.title"),
-            description: t("projects.portfolio.description"),
-            image: `${Img.landingp}`,
-            tags: ["React.js ", "Tailwind CSS", " Vite"],
-            githubLink: "https://github.com/precurseur01/Portfolio",
-            liveLink: "https://dev-yndris.vercel.app/",
-        },
+        // {
+        //     title: t("projects.portfolio.title"),
+        //     description: t("projects.portfolio.description"),
+        //     image: `${Img.landingp}`,
+        //     tags: ["React.js ", "Tailwind CSS", " Vite"],
+        //     githubLink: "https://github.com/precurseur01/Portfolio",
+        //     liveLink: "https://dev-yndris.vercel.app/",
+        // },
         {
             title: t("projects.donationSite.title"),
             description: t("projects.donationSite.description"),
@@ -45,14 +45,14 @@ const projectsData = () => {
             githubLink: "",
             liveLink: "https://www.fondationamalia.org/",
         },
-        {
-            title: t("projects.wordpressLanding.title"),
-            description: t("projects.wordpressLanding.description"),
-            image: `${Img.fwordpress}`,
-            tags: ["WordPress", "Elementor", "SEO"],
-            githubLink: "",
-            liveLink: "https://famla.com/",
-        },
+        // {
+        //     title: t("projects.wordpressLanding.title"),
+        //     description: t("projects.wordpressLanding.description"),
+        //     image: `${Img.fwordpress}`,
+        //     tags: ["WordPress", "Elementor", "SEO"],
+        //     githubLink: "",
+        //     liveLink: "https://famla.com/",
+        // },
         {
             title: t("projects.collaborativeAIPlatform.title"),
             description: t("projects.collaborativeAIPlatform.description"),
@@ -72,4 +72,4 @@ const projectsData = () => {
     ];
 };
 
-export default projectsData;
+export default ProjectsData;
