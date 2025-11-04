@@ -67,7 +67,11 @@
     }
   },
   "services": {
+    "learnMore": "Learn More",
     "title": "My Services",
+    "services&": "Services & ",
+    "description": " I offer a range of services to help you bring your digital projects to life, tailored to your specific needs.",
+    "Customized Solutions": "Customized Solutions",
     "webDevelopment": {
       "title": "Web Development",
       "description": "Custom website and web application development using the latest technologies.",

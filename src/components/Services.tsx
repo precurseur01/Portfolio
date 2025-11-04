@@ -15,10 +15,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Services & <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Solutions sur Mesure</span>
+              {t('services.services&')}  <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">  {t('services.customizedSolutions')} </span>
             </h2>
             <p className="text-xl text-gray max-w-2xl mx-auto">
-              Des services adaptés à vos besoins, de la conception à la mise en production
+              {t('services.description')}
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-emerald-400 mx-auto rounded-full mt-6"></div>
           </div>
@@ -50,7 +50,7 @@ const Services = () => {
 
                   <div className="pt-4 border-t border-black/10">
                     <a href="#contact" className="text-black-400 hover:text-black flex items-center gap-2 text-sm font-medium group-hover:gap-3 transition-all">
-                      En savoir plus
+                     {t('services.learnMore')} 
                       <ArrowRight size={16} />
                     </a>
                   </div>

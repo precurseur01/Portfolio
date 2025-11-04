@@ -67,7 +67,11 @@
         }
     },
     "services": {
+        "learnMore": "En savoir plus",
         "title": "Mes Services",
+        "services&": "Services & ",
+        "description": "Des services adaptés à vos besoins, de la conception à la mise en production.",
+        "Customized Solutions": "Solutions Personnalisées",
         "webDevelopment": {
             "title": "Développement Web",
             "description": "Création de sites web et d'applications web sur mesure avec les dernières technologies.",
