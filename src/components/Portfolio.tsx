@@ -43,7 +43,7 @@ const Portfolio = () => {
             className="text-lg text-slate-600 max-w-2xl mx-auto"
           >
             {t('projects.description')}
-           
+
           </motion.p>
         </motion.div>
 

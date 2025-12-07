@@ -155,7 +155,7 @@ const Contact = () => {
                 </p>
                 <div className="flex items-center gap-2 text-emerald-600 font-semibold">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                  Disponible immédiatement
+                   {t('contact.currentlyAvailableNow')}
                 </div>
               </motion.div>
             </motion.div>
