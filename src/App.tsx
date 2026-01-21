@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import DigitalStrategy from './components/DigitalStrategy';
+import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Services />
         <DigitalStrategy />
         <Contact />
+        <FloatingWhatsAppButton />
       </main>
       <Footer />
     </div>
