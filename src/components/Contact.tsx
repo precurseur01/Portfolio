@@ -12,23 +12,52 @@ const Contact = () => {
   });
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const [status, setStatus] = React.useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = () => {
-    // Optionnel : si tu veux éviter le rechargement complet
-    // e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-    setTimeout(() => {
-      if (formRef.current) {
-        formRef.current.reset();
-      }
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
+    setStatus('sending');
+
+    try {
+      const res = await fetch('https://formspree.io/f/xldnpebz', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: 'Nouveau message depuis le formulaire de contact',
+        }),
       });
-    }, 3000); // 3s après l'envoi
+
+      if (res.ok) {
+        setStatus('success');
+
+        if (formRef.current) {
+          formRef.current.reset();
+        }
+
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+
+        setTimeout(() => setStatus('idle'), 4000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
+      }
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
 
@@ -155,7 +184,7 @@ const Contact = () => {
                 </p>
                 <div className="flex items-center gap-2 text-emerald-600 font-semibold">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-                   {t('contact.currentlyAvailableNow')}
+                  {t('contact.currentlyAvailableNow')}
                 </div>
               </motion.div>
             </motion.div>
@@ -169,11 +198,10 @@ const Contact = () => {
               <div className="bg-white p-8 rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100">
                 <form
                   ref={formRef}
-                  action="https://formspree.io/f/xldnpebz"
-                  method="POST"
                   onSubmit={handleSubmit}
                   className="space-y-6"
                 >
+                  <input type="text" name="_gotcha" className="hidden" />
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
                       {t('contact.form.name')}
@@ -221,23 +249,63 @@ const Contact = () => {
 
                   <motion.button
                     type="submit"
-                    // disabled={isSubmitting || isSubmitted}
-                    // whileHover={!isSubmitting && !isSubmitted ? { scale: 1.02 } : {}}
-                    // whileTap={!isSubmitting && !isSubmitted ? { scale: 0.98 } : {}}
-                    className={`w-full px-6 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-emerald-600 text-white hover:from-blue-700 hover:to-emerald-700 shadow-lg shadow-blue-500/30'
-                      `}
+                    disabled={status === 'sending' || status === 'success'}
+                    whileHover={status === 'idle' ? { scale: 1.02 } : {}}
+                    whileTap={status === 'idle' ? { scale: 0.98 } : {}}
+                    className="w-full px-6 py-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-emerald-600 text-white hover:from-blue-700 hover:to-emerald-700 shadow-lg shadow-blue-500/30 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <AnimatePresence mode="wait">
-                      <motion.div
-                        key="default"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="flex items-center gap-2"
-                      >
-                        {t('contact.form.submit')}
-                        <Send size={20} />
-                      </motion.div>
+
+                      {status === "sending" && (
+                        <motion.div
+                          key="sending"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                          {t('contact.form.sending')}
+                        </motion.div>
+                      )}
+
+                      {status === "success" && (
+                        <motion.div
+                          key="success"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          ✓ {t('contact.form.success')}
+                        </motion.div>
+                      )}
+
+                      {status === "error" && (
+                        <motion.div
+                          key="error"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          {t('contact.form.retry')}
+                        </motion.div>
+                      )}
+
+                      {status === "idle" && (
+                        <motion.div
+                          key="idle"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          className="flex items-center gap-2"
+                        >
+                          {t('contact.form.submit')}
+                          <Send size={20} />
+                        </motion.div>
+                      )}
+
                     </AnimatePresence>
                   </motion.button>
                 </form>

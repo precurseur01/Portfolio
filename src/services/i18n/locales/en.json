@@ -133,7 +133,12 @@
       "name": "Full name",
       "email": "Email",
       "message": "Message",
-      "submit": "Send message"
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent",
+      "retry": "Try again",
+      "successMessage": "Message sent successfully. We will reply shortly.",
+      "errorMessage": "An error occurred. Please try again."
     }
   },
   "footer": {
